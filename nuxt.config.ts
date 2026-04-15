@@ -57,11 +57,6 @@ export default defineNuxtConfig({
             title: '阅读导引',
             description: '文档站使用方式、翻译策略与阅读建议。',
             href: '/docs'
-          },
-          {
-            title: '原始 PDF',
-            description: '用于建立页码映射与术语校对的源文件。',
-            href: '/General_TCG_Theory_single.pdf'
           }
         ]
       },

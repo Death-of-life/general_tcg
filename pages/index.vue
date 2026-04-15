@@ -51,12 +51,6 @@ useSeoMeta({
               variant="solid"
               trailing-icon="i-lucide-arrow-right"
             />
-            <UButton
-              to="/General_TCG_Theory_single.pdf"
-              label="查看原始 PDF"
-              target="_blank"
-              trailing-icon="i-lucide-arrow-up-right"
-            />
           </div>
         </div>
 

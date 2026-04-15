@@ -19,16 +19,6 @@ const headerLinks = computed<NavigationMenuItem[]>(() => [
   }
 ])
 
-const searchLinks = [
-  {
-    label: '原始 PDF',
-    description: '查看原书 PDF。',
-    to: '/General_TCG_Theory_single.pdf',
-    target: '_blank',
-    icon: 'i-lucide-file-text'
-  }
-]
-
 const { data: navigation } = await useAsyncData('docs-navigation', () => {
   return queryCollectionNavigation('docs')
     .where('draft', '=', false)
@@ -74,14 +64,14 @@ provide('docs-navigation', navigation as Ref<ContentNavigationItem[] | undefined
         <template #left>
           <div class="space-y-1 text-sm text-muted">
             <p>《一般 TCG 理论》中文文档站</p>
-            <p>简体中文阅读版</p>
+            <p>静态部署版</p>
           </div>
         </template>
 
         <template #right>
           <div class="space-y-1 text-sm text-muted">
-            <p>源文件：General_TCG_Theory_single.pdf</p>
-            <p>可从目录、搜索或原始 PDF 进入阅读。</p>
+            <p>基于 Nuxt Content</p>
+            <p>面向长文阅读与 LLM 抓取</p>
           </div>
         </template>
       </UFooter>
@@ -90,7 +80,6 @@ provide('docs-navigation', navigation as Ref<ContentNavigationItem[] | undefined
     <UContentSearch
       :navigation="navigation"
       :files="files"
-      :links="searchLinks"
       title="检索文档与章节"
       description="输入标题、术语或正文片段，直接跳到对应章节。"
     />
