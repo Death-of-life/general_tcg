@@ -52,7 +52,8 @@ pnpm preprocess:pdf
 
 1. 点击 README 顶部的 `Deploy to Cloudflare Workers` 按钮。
 2. 在 Cloudflare 页面授权后，系统会基于此仓库创建你自己的副本仓库并引导部署。
-3. 按提示完成构建配置（静态站可使用 `pnpm generate`，输出目录 `.output/public`）。
-4. 完成后，后续对新仓库分支的推送可触发自动构建与部署（由 Workers Builds 管理）。
+3. 仓库已包含 `wrangler.toml`（静态资源目录为 `.output/public`）。
+4. 按提示完成构建配置（建议构建命令 `pnpm generate`）。
+5. 完成后，后续对新仓库分支的推送可触发自动构建与部署（由 Workers Builds 管理）。
 
 > 注意：该按钮是 Workers 路线，不等价于 Pages Git Integration。若你要保留当前 Pages 工作流，请继续使用上面的 Pages 章节。
