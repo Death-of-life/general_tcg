@@ -1,0 +1,110 @@
+[
+  {
+    "term": "一般 TCG 理论",
+    "original": "一般TCG理論",
+    "translation": "General TCG Theory",
+    "note": "指试图跨越具体环境与具体标题，把卡牌游戏的共通知识抽象成可讨论、可迁移的方法论。"
+  },
+  {
+    "term": "地力",
+    "original": "地力",
+    "translation": "基础实力",
+    "note": "不是单次对局的发挥，而是长期稳定地做出高质量判断、复盘与成长的底层能力。"
+  },
+  {
+    "term": "环境",
+    "original": "環境",
+    "translation": "赛制环境 / 对局环境",
+    "note": "包括主流套牌、玩家倾向、赛事规则与当下流行解答的总和。"
+  },
+  {
+    "term": "标题",
+    "original": "タイトル",
+    "translation": "具体卡牌标题",
+    "note": "对应某一个独立的 TCG 产品或体系，例如 MTG、宝可梦卡牌、Shadowverse EVOLVE。"
+  },
+  {
+    "term": "失误",
+    "original": "プレミ",
+    "translation": "play mistake / 判断失误",
+    "note": "日语玩家圈常写作「プレミ」，在这里泛指构筑、换备与对局中的错误决策。"
+  },
+  {
+    "term": "研究外し",
+    "original": "研究を外す",
+    "translation": "脱离对手既有研究",
+    "note": "原本来自将棋语境，指让对手脱离赛前准备过的分支，迫使其临场判断。"
+  },
+  {
+    "term": "法力曲线",
+    "original": "マナカーブ",
+    "translation": "mana curve",
+    "note": "按费用分布审视牌组结构的方法，尤其用于判断构筑是否能稳定展开。"
+  },
+  {
+    "term": "边学边迁移",
+    "original": "点と点を繋ぐ",
+    "translation": "connect the dots",
+    "note": "借用乔布斯的说法，指把原本看似无关的经验重新连接，转化为新的竞争优势。"
+  },
+  {
+    "term": "数字化选牌",
+    "original": "デジタルピック",
+    "translation": "digital pick",
+    "note": "优先依据统计指标机械选牌的方法，核心价值在于减少主观偏差，但也会忽略协同与前提条件。"
+  },
+  {
+    "term": "GIH WR",
+    "original": "Game In Hand Win Rate",
+    "translation": "手牌胜率指标",
+    "note": "指某张牌在对局中进入手牌时的平均胜率，常被用来估计单卡上手后的客观强度。"
+  },
+  {
+    "term": "GP WR",
+    "original": "Games Played Win Rate",
+    "translation": "套牌采用胜率",
+    "note": "指某张牌被放入套牌并实际参与对局时的平均胜率，更接近整体构筑层面的统计。"
+  },
+  {
+    "term": "OH WR",
+    "original": "Opening Hand Win Rate",
+    "translation": "起手胜率",
+    "note": "指某张牌出现在起手时的平均胜率，尤其适合衡量低费启动牌或开局节奏牌的价值。"
+  },
+  {
+    "term": "IWD",
+    "original": "Win Rate Improved When Drawn",
+    "translation": "抽到后胜率增量",
+    "note": "表示抽到某张牌时相较于未抽到时的胜率差，适合看傑出度，但也最容易掉进抽样陷阱。"
+  },
+  {
+    "term": "蒙特卡洛法",
+    "original": "モンテカルロ法",
+    "translation": "Monte Carlo simulation",
+    "note": "通过大量随机试行逼近复杂结果分布的方法，在文中被用来模拟大型赛事中的配对与晋级概率。"
+  },
+  {
+    "term": "认知偏差",
+    "original": "認知バイアス",
+    "translation": "cognitive bias",
+    "note": "指人类在理解信息、解释结果和做选择时会稳定出现的偏斜模式，也是原创构筑与读数据时必须识别的障碍。"
+  },
+  {
+    "term": "大局观",
+    "original": "大局観",
+    "translation": "strategic overview",
+    "note": "可理解为把低位信息提升成高位判断的能力，用来从局部场面推导整盘游戏、构筑和元游戏方向。"
+  },
+  {
+    "term": "直觉",
+    "original": "直観",
+    "translation": "intuition",
+    "note": "不是神秘灵感，而是由长期知识与经验沉淀出的快速判断能力，需与推理互相校正。"
+  },
+  {
+    "term": "系统 1 / 2 / 3",
+    "original": "システム1 / システム2 / システム3",
+    "translation": "直觉 / 推理 / 默考",
+    "note": "文中借用卡尼曼与后续扩展框架，分别对应快速直觉、逻辑推理，以及两者之间的回看与修正。"
+  }
+]

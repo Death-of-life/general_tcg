@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@500;600;700&display=swap");
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+@source "../../content/**/*";
+
+:root {
+  --ui-radius: 1.2rem;
+  --paper-0: #faf6ed;
+  --paper-1: #f4ecdc;
+  --paper-2: #eadfc9;
+  --ink-0: #221c14;
+  --ink-1: #54473a;
+  --line: rgba(92, 73, 48, 0.16);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Noto Sans SC", "PingFang SC", "Hiragino Sans GB", sans-serif;
+  color: var(--ink-0);
+  background:
+    radial-gradient(circle at top left, rgba(245, 201, 83, 0.16), transparent 32rem),
+    radial-gradient(circle at 85% 10%, rgba(70, 122, 98, 0.15), transparent 24rem),
+    linear-gradient(180deg, var(--paper-0), #f9f4ea 45%, #f7f0e5);
+}
+
+body::before {
+  content: "";
+  pointer-events: none;
+  position: fixed;
+  inset: 0;
+  opacity: 0.22;
+  background-image:
+    linear-gradient(var(--line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--line) 1px, transparent 1px);
+  background-size: 24px 24px;
+  mask-image: linear-gradient(180deg, black 20%, transparent 100%);
+}
+
+a {
+  text-underline-offset: 0.18em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Noto Serif SC", "Source Han Serif SC", serif;
+  letter-spacing: 0.02em;
+}
+
+.page-surface {
+  position: relative;
+  isolation: isolate;
+}
+
+.page-surface::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  border-radius: 2rem;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.72), rgba(250, 245, 236, 0.84));
+  box-shadow:
+    0 24px 80px rgba(72, 52, 31, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.75);
+}
+
+.paper-panel {
+  border: 1px solid rgba(103, 83, 58, 0.14);
+  background: rgba(255, 252, 246, 0.86);
+  box-shadow: 0 12px 36px rgba(70, 52, 31, 0.06);
+  backdrop-filter: blur(18px);
+}
+
+.paper-prose {
+  line-height: 1.95;
+  color: var(--ink-1);
+}
+
+.paper-prose h1,
+.paper-prose h2,
+.paper-prose h3 {
+  color: var(--ink-0);
+}
+
+.paper-prose p {
+  margin-block: 1rem;
+  text-wrap: pretty;
+}
+
+.paper-prose blockquote {
+  margin-block: 1.5rem;
+  border-inline-start: 4px solid rgba(164, 114, 16, 0.38);
+  padding-inline: 1rem;
+  color: #5f4f3e;
+  background: rgba(255, 248, 232, 0.74);
+}
+
+.paper-prose ul,
+.paper-prose ol {
+  padding-inline-start: 1.25rem;
+}
+
+.hero-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: 1px solid rgba(146, 118, 37, 0.18);
+  border-radius: 999px;
+  background: rgba(255, 249, 236, 0.88);
+  color: #7d5b13;
+  font-size: 0.8125rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.45rem 0.9rem;
+}
+
+.chapter-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .chapter-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1280px) {
+  .chapter-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.article-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.doc-caption {
+  color: #6b5b47;
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+

@@ -1,0 +1,35 @@
+{
+  "name": "general-tcg-theory-cn",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Nuxt 中文文档站，用于整理《一般TCG理论》的翻译、章节索引与 LLM 文档输出。",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "postinstall": "nuxt prepare",
+    "prepare": "nuxt prepare",
+    "preprocess:pdf": "python3 scripts/preprocess_pdf.py --pdf General_TCG_Theory_single.pdf --output source/extracted --chapter-map data/chapter-map.json --chapter-output source/chapters --public-output public/source --preview-pages 3,16,107",
+    "preview": "nuxt preview",
+    "typecheck": "nuxt typecheck"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@iconify-json/lucide": "^1.2.102",
+    "@nuxt/content": "^3.13.0",
+    "@nuxt/ui": "^4.6.1",
+    "better-sqlite3": "^12.9.0",
+    "nuxt": "^4.4.2",
+    "nuxt-llms": "^0.2.0",
+    "tailwindcss": "^4.2.2",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@types/node": "^25.6.0",
+    "tsx": "^4.21.0",
+    "typescript": "^6.0.2"
+  }
+}

@@ -1,0 +1,10 @@
+node_modules
+.nuxt
+.output
+.data
+dist
+.DS_Store
+source/extracted
+source/chapters
+public/source
+

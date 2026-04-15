@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "skills": {
+    "baoyu-translate": {
+      "source": "jimliu/baoyu-skills",
+      "sourceType": "github",
+      "computedHash": "9a675ea21145021dfc14d0b3fa01a38c9468c4b125dd9805060dbdb8c113ef42"
+    },
+    "nuxt-ui": {
+      "source": "nuxt/ui",
+      "sourceType": "github",
+      "computedHash": "d68902b1e5f1435e6904323dc8227f31c42d03306dd0850bcb8491191b985752"
+    }
+  }
+}
